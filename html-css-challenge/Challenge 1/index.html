@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles-readonly.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title>Joe's Restaurant</title>
+  <!-- CSS Styling -->
+  <style>
+    /* FOR THIS CHALLENGE, WRITE ALL OF YOUR STYLING WITHIN THIS <style> TAG */
+    /* PART 1 CSS */
+    header {color:rgb(57,57,57);}
+    nav {background-color:rgb(179,193,176);}
+    img {width: 100%;}
+    div h1 {font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px;}
+    .highlight {color: rgb(232,131,106);}
+
+    /* PART 2 CSS*/
+    @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+    main {font-family: 'Jost'; background: rgb(231, 231, 231);}
+    h2 {text-decoration: underline;}
+    h3 {color: rgb(49, 89, 177); margin-top: 1%;}
+    ul {list-style-type: none; padding: 0;}
+    .appetizers {background-color: rgb(238, 238, 238); padding: 2%; margin-top: -.9em;}
+    main span {color: rgb(211, 34, 34); font-weight: bold;}
+    .deals li { margin-bottom: .5em;}
+  </style>
+  <!-- END OF CSS -->
+</head>
+<body>
+
+  <!-- HTML & CSS: PART 1 -->
+  <header>
+    <!-- 
+      For this <header> element, write the following styling:
+        - font color of rgb(57,57,57)
+     -->
+    <nav>
+    <!--
+      For this <nav> element, write the following styling:
+        - background color of rgb(179,193,176). 
+    -->
+      <h1>Joe's</h1>
+      <ul>
+        <li>Menu</li>
+        <li>Home</li>
+      </ul>
+    </nav>
+    <div id="hero-container">
+      <!-- 
+        In this div above #greeting, we want to display a nice big hero image. 
+        Below this comment, create an image tag and ensure it has the following:
+          - Your image should have a width of 100%. 
+          - The image you should show lives at this url (https://drive.google.com/uc?export=view&id=1Jz937sGmWecge5XywqMkmqPoFqliUu9z).
+      -->
+        <img src="https://drive.google.com/uc?export=view&id=1Jz937sGmWecge5XywqMkmqPoFqliUu9z" alt="Beautiful image of a cooking table">
+        <div id='greeting'>
+          <!-- 
+          Below this comment, create a level-one header displaying the restaurant name. This is the main title of the page and should be above the slogan.
+          Your h1 should have the following styling:
+            - The font style should be Arial.
+            - Should have a margin bottom of 10 pixels.
+          -->
+
+          <h1>Joe's Restaurant</h1>
+
+          <!-- 
+          Apply a class name of "highlight" to each <span> tag in the level-five header below.
+          For your class name write the styling to change the color of the font from black to rgb(232,131,106).
+          -->
+          <h5 id="slogan"><span class="highlight">Always</span> serving <span class="highlight">fresh</span> ingredients with a smile.</h5>
+        </div>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+  </header>
+  <!-- 
+    HTML & CSS: PART 2 
+    Follow the instructions / requirements presented in the prep course "Projects" tab > "Restaurant Website & Menu" > "Part 2"
+  -->
+  <main>
+    <h2>Menu</h2>
+    <!-- Create a restaurant menu here -->
+
+    <section>
+      <h3>APPETIZERS</h3>
+      <ul class="appetizers">
+        <li>
+          <h4>name: Cranberry Brie Bread</h4>
+          <p>description: gooey brie topped with sweet cranberries on a crusty loaf of sourdough</p>
+          <p>price: <span>$18.00</span></p>
+        </li>
+        <li>
+          <h4>name: Korean Beef Lettuce Wraps</h4>
+          <p>description: bulgogi beef wrapped in little lettuce packages with homemade pickled onions and radishes, topped with miso mayo</p>
+          <p>price: <span>$14.00</span></p>
+        </li>
+        <li>
+          <h4>Spinach-Stuffed Mushrooms </h4>
+          <p>description: creamy, garlicky, spinach stuffed mushrooms topped with bubbling parmesan cheese </p>
+          <p>price: <span>$12.00</span></p>
+        </li>
+      </ul>
+    </section> 
+
+    <section>
+      <h3>MAINS</h3>
+      <ul class="appetizers">
+        <li>
+          <h4>name: Apple and Onion Pork Chops</h4>
+          <p>description: hearty fall flavours served with brussels sprouts with toasted hazelnut butter and an in house made french roll</p>
+          <p>price: <span>$24.00</span></p>
+        </li>
+        <li>
+          <h4>name: Grilled Moroccan Chicken</h4>
+          <p>description: fragrant chicken cooked with garlic, lemon, and pomegranate molasses served with roasted turmeric cauliflower topped with creamy yogurt</p>
+          <p>price: <span>$26.00</span></p>
+        </li>
+        <li>
+          <h4>name: Grilled Lobster Tails with Coriander</h4>
+          <p>description: fresh and tender lobster tails seasoned with coriander and topped with warm chilli butter sauce</p>
+          <p>price: <span>$32.00</span></p>
+        </li>
+        <li>
+          <h4>name: Dried Tomato Florentine Pasta</h4>
+          <p>description: spicy pasta cooked in a sun dried tomato cream sauce topped with spinach and mozzarella</p>
+          <p>price: <span>$22.00</span></p>
+        </li>
+      </ul>
+      
+    </section>
+
+    <section>
+      <h3>SALADS</h3>
+      <ul class="appetizers">
+        <li>
+          <h4>name: Broccoli and Apple Salad with Chicken</h4>
+          <p>description: charred broccoli, sweet fuji apples, feta cheese and warm grilled chicken breast served on a bed of mixed greens</p>
+          <p>price: <span>$18.00</span></p>
+        </li>
+        <li>
+          <h4>name: Persimmon, Pomegranate, and Kale Salad</h4>
+          <p>description: massaged seasoned kale salad served with a delicious tangy citrus dressing</p>
+          <p>price: <span>$14.00</span></p>
+        </li>
+        <li>
+          <h4>name: Peach, Sweet Corn and Halloumi Salad</h4>
+          <p>description: fresh sweet corn and juicy peaches served with salty halloumi cheese on arugula</p>
+          <p>price: <span>$22.00</span></p>
+        </li>
+      </ul>
+      
+
+      <section>
+        <h3>DESSERTS</h3>
+        <ul class="appetizers">
+          <li>
+            <h4>name: Salted Caramel White Chocolate Brownies</h4>
+            <p>description: decadent gooey white chocolate brownies layered with in house made caramel</p>
+            <p>price: <span>$12</span></p>
+          </li>
+          <li>
+            <h4>name: Cinnamon Sugar Pretzel Bites</h4>
+            <p>description: warm fried dough covered in cinnamon sugar served with chocolate sauce for dipping</p>
+            <p>price: <span>$8</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="deals">
+        <h3>DEALS</h3>
+        <ul class="appetizers">
+          <li>monday $3 off vegetarian salads and mains</li>
+          <li>tuesday $2 off bar rail </li>
+          <li>wednesday half-priced appetizers after 9pm</li>
+          <li>thursday $2 off cocktails </li>
+          <li>friday one free dessert with the purchase 2 mains</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
